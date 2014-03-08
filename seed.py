@@ -1,14 +1,14 @@
 import model
 import csv
 import re
-#import DateTime 
+import datetime 
 
 def load_users(session):
     # use u.user
     # open the file 
     # use 'with' when opening a file, manipulating file, then closing it 
 
-    with open("seed_data/u.users") as f:
+    with open("seed_data/u.user") as f:
 # read the data and tokenize by |
         reader = csv.reader(f, delimiter = "|")
 #parse/read line by line 
